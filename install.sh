@@ -25,7 +25,7 @@ EOF
 return 0
 }
 
-confirm_prompt "Did you install flatpak or a desktop environment (e.g. KDE/GNOME)?" && write_data_dir
+confirm_prompt "Did you install flatpak or a desktop environment (e.g. KDE/GNOME)?" || write_data_dir
 
 echo "Installing dependencies."
 
