@@ -40,7 +40,7 @@ echo "Installing MaXX Desktop."
 
 # Install MaXX Interactive Desktop with official installer
 cd /tmp
-bash -c "$(curl -fsSL https://s3.ca-central-1.amazonaws.com/cdn.maxxinteractive.com/maxx-desktop-installer/MaXX-Desktop-LINUX-x64-2.1.1-Installer.sh)"
+bash -c "$(curl -fsSL https://s3.ca-central-1.amazonaws.com/cdn.maxxinteractive.com/maxx-desktop-installer/MaXX-Desktop-LINUX-x64-2.2.0-alpha-1-Installer.sh)"
 
 echo "Final preparations."
 
