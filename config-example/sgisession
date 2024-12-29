@@ -1,0 +1,33 @@
+#!/bin/sh
+
+##############################################################
+#
+##    MaXX Interactive Desktop - Startup Applications
+#
+#                         User Specific
+#
+#############################################################
+#
+# Edit with care!  Always terminate each line with '&' character 
+#                  in order to start in background mode.
+
+
+
+# Starting xclock
+/usr/bin/xclock -geometry 79x80+20+15 > /dev/null 2>&1 &
+
+# System tray
+/usr/bin/stalonetray &
+
+# Modern xscreensaver
+/usr/bin/xscreensaver --no-splash &
+
+# Polkit agent - openSUSE path
+/usr/libexec/polkit-gnome-authentication-agent-1 &
+
+# Screenshot tool
+/usr/bin/flameshot &
+
+# Blue light filter
+#/usr/bin/redshift -l 35.69:139.69 &
+
