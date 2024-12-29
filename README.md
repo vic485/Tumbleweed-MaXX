@@ -1,9 +1,9 @@
 # Tumbleweed MaXX
 Unofficial installation script for MaXX Interactive Desktop on openSUSE Tubmleweed.
 
-Tested with snapshot 20231214
+Tested with snapshot 20241226
 
 ## Notes
-Requires another desktop environment installed to work properly. I prefer KDE but Gnome is the officially supported DE. Selecting the "Generic Desktop" workflow when installing tumbleweed currently causes png files to fail to load in rox-filer.
+Works with "Generic Desktop" pattern to create a very minimal system. Provided config files help to setup a more daily-drivable install.
 
 Setup for xscreensaver and a config file are provided in the `screensaver` folder.
