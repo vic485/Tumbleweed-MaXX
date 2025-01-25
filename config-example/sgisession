@@ -28,6 +28,9 @@
 # Screenshot tool
 /usr/bin/flameshot &
 
+# Jetbrains Toolbox
+/home/vic485/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize &
+
 # Blue light filter
 #/usr/bin/redshift -l 35.69:139.69 &
 
