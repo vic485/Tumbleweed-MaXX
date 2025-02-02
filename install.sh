@@ -25,6 +25,15 @@ EOF
 return 0
 }
 
+#
+# DANGER  -- YE BE WARNED!!
+# MaXX includes older versions of HarfBuzz and FreeType which causes issues with the system install of Pango
+#
+function dangerous_func {
+	rm /opt/MaXX/lib64/libharfbuzz*
+ 	rm /opt/MaXX/lib64/libfreetype*
+}
+
 confirm_prompt "Did you install flatpak or a desktop environment (e.g. KDE/GNOME)?" || write_data_dir
 
 echo "Installing dependencies."
@@ -49,6 +58,8 @@ echo "Final preparations."
 ln /usr/sbin/shutdown /usr/bin/shutdown
 
 confirm_prompt "Install pavucontrol? (Will setup pulse/pipewire if not done already)" && zypper -n install pavucontrol
+
+confirm_prompt "Run library 'fixes'? (Allows ROX filer to start, but may cause other issues)" && dangerous_func
 
 echo "Done! Logout or Reboot."
 
