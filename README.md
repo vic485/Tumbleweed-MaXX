@@ -1,7 +1,7 @@
 # Tumbleweed MaXX
 Unofficial installation script for MaXX Interactive Desktop on openSUSE Tubmleweed.
 
-Tested with snapshot 20241226
+Tested with snapshot 20251024
 
 ## Notes
 Works with "Generic Desktop" pattern to create a very minimal system. Provided config files help to setup a more daily-drivable install.

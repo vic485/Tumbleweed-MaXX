@@ -48,6 +48,10 @@ echo "Final preparations."
 ## shutdown is in /usr/sbin which is not in the standard user path causing the MaXX Shutdown and Reboot programs to fail
 ln /usr/sbin/shutdown /usr/bin/shutdown
 
+# Sketchy link until future updates fix.
+## Rox-Filer requires libxml2.so.2 but only libxml2.so.16 is officially provided now
+ln /usr/lib64/libxml2.so.16 /usr/lib64/libxml2.so.2
+
 confirm_prompt "Install pavucontrol? (Will setup pulse/pipewire if not done already)" && zypper -n install pavucontrol
 
 echo "Done! Logout or Reboot."
